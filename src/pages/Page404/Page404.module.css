@@ -1,0 +1,46 @@
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--primary);
+  border: 1px solid white;
+}
+
+.titulo {
+  color: var(--cta);
+  font-weight: 300;
+}
+
+.textos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.texto_grande {
+  font-size: 18rem;
+  color: var(--cta);
+  font-weight: 800;
+}
+
+.texto_mensagem {
+  color: var(--cta);
+  font-weight: 300;
+}
+
+.texto_mensagem {
+  font-size: 1.5rem;
+}
+
+@media (max-width: 390px) {
+  .texto_grande {
+      font-size: 150px;
+  }
+  .texto_mensagem, .titulo {
+      font-size: 1rem;
+  }
+}

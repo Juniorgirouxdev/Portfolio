@@ -1,0 +1,58 @@
+.contatos {
+  width: 100%;
+  height: 92vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1.2rem;
+  background-color: var(--primary);
+}
+
+.titles {
+  color: var(--secondary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.titles h2 {
+  font-size: 2.250rem;
+}
+
+.icones {
+  width: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding-block: 1.5rem;
+}
+
+.icone {
+  font-size: 3rem;
+  color: var(--secondary);
+  cursor: pointer;
+  transition: .4s;
+}
+
+.icone:hover {
+  color: var(--cta);
+}
+
+@media (max-width: 768px) {
+  .contatos {
+      text-align: center;
+      padding-inline: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .icones {
+      gap: 0.5rem;
+  }
+  .icone {
+    font-size: 1.5rem;
+  }
+}

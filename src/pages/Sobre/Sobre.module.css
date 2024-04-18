@@ -1,0 +1,97 @@
+.sobre {
+  width: 100%;
+  min-height: 92vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  background-color: var(--primary);
+  padding-block: 95px;
+}
+
+.bio {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  margin-bottom: 3rem;
+}
+
+.container__img img {
+  width: 350px;
+}
+
+.bio strong {
+  font-size: 1.125rem;
+  color: var(--secondary);
+}
+
+.textos__sobre {
+  width: 60%;
+  text-align: center;
+}
+
+.textos__sobre p {
+  text-align: justify;
+}
+
+.textos__sobre h2,
+p, h3 {
+  color: var(--secondary);
+  margin-bottom: 1rem;
+}
+
+.textos__sobre h2, h3 {
+  font-size: 1.750rem;
+}
+
+.hardskills {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.125rem;
+}
+
+.icones{
+  margin-top: 1rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.icones {
+  color: var(--secondary);
+  text-decoration: none;
+}
+
+
+.icon {
+  font-size: 50px;
+  transition: .4s;
+  cursor: pointer;
+}
+
+.icon:hover {
+  color: var(--cta);
+}
+
+@media (max-width: 768px) {
+  .bio {
+      flex-direction: column;
+      gap: 1rem;
+  }
+}
+
+/* mobile m */
+@media (max-width: 390px) {
+  .icon {
+      height: 30px;
+  }
+  .textos__sobre {
+    width: 100%;
+    padding: 0 2.5rem;
+    text-align: center;
+  }
+}
