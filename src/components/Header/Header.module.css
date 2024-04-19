@@ -11,11 +11,13 @@
   z-index: 100;
 }
 
-.header nav {
+.nav {
+  width: 80%;
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 3rem;
+  margin-left: 80px;
 }
 
 .header a {
@@ -66,9 +68,12 @@ img {
     margin-bottom: 2rem;
     padding: .8rem 1.5rem;
   }
+  .nav {
+    margin-left: 0;
+  }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 600px) {
   .menu__resposive {
     display: none;
   }

@@ -9,14 +9,12 @@ export default function ProjectCard({ project }) {
         <h3 className={styles.title__tech}>Tecnologias usadas:</h3>
         <ul className={styles.box__tech}>
           {project.technologies.map((tech, index) => (
-            <li key={index}>
-              {tech}
-            </li>
+            <li key={index}>{tech}</li>
           ))}
         </ul>
-        <div className={styles.box__button}>
-          <button type="button">Ver mais</button>
-        </div>
+      </div>
+      <div className={styles.box__button}>
+        <button type="button">Ver mais</button>
       </div>
     </div>
   );

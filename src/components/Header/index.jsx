@@ -8,7 +8,7 @@ export default function Header() {
 
   return (
     <header className={styles.header}>
-      <nav>
+      <nav className={styles.nav}>
         <Link className={styles.navBar} to="/">
           Home
         </Link>
