@@ -9,7 +9,7 @@ export default function ProjectCard({ project }) {
         <h3 className={styles.title__tech}>Tecnologias usadas:</h3>
         <ul className={styles.box__tech}>
           {project.technologies.map((tech, index) => (
-            <li className={styles.content__tech} key={index}>
+            <li key={index}>
               {tech}
             </li>
           ))}
