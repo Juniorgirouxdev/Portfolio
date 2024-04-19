@@ -6,7 +6,6 @@
   justify-content: center;
   align-items: center;
   background-color: var(--primary);
-  border: 1px solid white;
 }
 
 .titulo {
@@ -36,7 +35,7 @@
   font-size: 1.5rem;
 }
 
-@media (max-width: 390px) {
+@media (min-width: 320px) {
   .texto_grande {
       font-size: 150px;
   }
