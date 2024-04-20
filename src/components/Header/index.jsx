@@ -4,11 +4,14 @@ import { useState } from "react";
 
 export default function Header() {
   const [menu, setMenu] = useState(false);
-  const [close, setclose] = useState(false);
 
+  const closeMenu = () => {
+    setMenu(false)
+  }
+  
   return (
     <header className={styles.header}>
-      <nav className={styles.nav}>
+      <nav data-aos="fade-down" className={styles.nav}>
         <Link className={styles.navBar} to="/">
           Home
         </Link>
@@ -40,16 +43,16 @@ export default function Header() {
         <div className={styles.toggle__navBar}>
           <ul>
             <Link to="/">
-              <li>Home</li>
+              <li onClick={closeMenu}>Home</li>
             </Link>
             <Link to="/sobre">
-              <li>Sobre</li>
+              <li onClick={closeMenu}>Sobre</li>
             </Link>
             <Link to="/projetos">
-              <li>Projetos</li>
+              <li onClick={closeMenu}>Projetos</li>
             </Link>
             <Link to="/contatos">
-              <li>Contatos</li>
+              <li onClick={closeMenu}>Contatos</li>
             </Link>
           </ul>
         </div>
