@@ -1,24 +1,17 @@
 const projects = [
   {
     id: 1,
-    title: 'Projeto 1',
-    description: 'Descrição do Projeto 1.',
-    image: 'https://www.rhuanbello.com/assets/projects/dailyweather.jpg',
+    title: 'Ecommerce - Rufino',
+    description: 'Projeto desenvoldido do zero, a partir de uma base feita no figma.',
+    image: 'https://i.imgur.com/HmCeJra.png',
     technologies: ['HTML', 'CSS', 'JavaScript']
   },
   {
     id: 2,
-    title: 'Projeto 2',
-    description: 'Descrição do Projeto 2.',
-    image: 'https://www.rhuanbello.com/assets/projects/dailyweather.jpg',
-    technologies: ['React', 'Redux', 'SCSS']
-  },
-  {
-    id: 3,
-    title: 'Projeto 3',
-    description: 'Descrição do Projeto 3.',
-    image: 'https://www.rhuanbello.com/assets/projects/dailyweather.jpg',
-    technologies: ['Vue.js', 'Vuex', 'Tailwind CSS']
+    title: 'Pizzaria Brokados',
+    description: 'Projeto real, sistema de pedidos online totalmente responsivo e adaptado para dispositiveis móveis.',
+    image: 'https://i.imgur.com/qYT1Csg.png',
+    technologies: ['HTML5', 'CSS3', 'JS', 'MYSQL']
   }
 ];
 
